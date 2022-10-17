@@ -2,15 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".AddPisoActivity">
+
+    <EditText
+        android:id="@+id/txtDireccionAddPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/direccion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNumAddPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/numero"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/txtProvinciaAddPiso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Provincia"
+        android:hint="@string/provincia"
         android:inputType="textPersonName" />
 
     <EditText
@@ -18,15 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ciudad"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/txtDireccionAddPiso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Direccion"
+        android:hint="@string/ciudad"
         android:inputType="textPersonName" />
 
     <EditText
@@ -34,13 +44,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="C.P."
-        android:inputType="textPersonName" />
+        android:hint="@string/codigo_postal"
+        android:inputType="number" />
 
-    <Spinner
-        android:id="@+id/spValoracionAddPiso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <RatingBar
+        android:id="@+id/rbValoracionpiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="0.5" />
 
     <LinearLayout
         android:layout_width="match_parent"
